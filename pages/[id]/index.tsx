@@ -5,14 +5,14 @@ import { getPostData } from "../api/md";
 
 import { Container, Card, Row, Text } from "@nextui-org/react";
 
-export async function getStaticPaths({ params }) {
+export async function getStaticPaths() {
   return {
     paths: [{ params: { id: "grid" } }, { params: { id: "text" } }],
     fallback: false, // can also be true or 'blocking'
   };
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params }: any) {
   // Add the "await" keyword like this:
   const postData = await getPostData(params.id);
 
@@ -23,7 +23,7 @@ export async function getStaticProps({ params }) {
   };
 }
 
-export default function Post({ postData }) {
+export default function Post({ postData }: any) {
   return (
     <Container
       display="flex"
