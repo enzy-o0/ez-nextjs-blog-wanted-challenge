@@ -9,12 +9,26 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nextui-org/react": "1.0.0-beta.10",
+    "front-matter": "4.0.2",
+    "fs": "0.0.1-security",
+    "gray-matter": "4.0.3",
+    "highlight.js": "11.6.0",
+    "markdown-it": "13.0.1",
     "next": "12.3.1",
+    "path": "0.12.7",
+    "prismjs": "1.29.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "remark": "14.0.2",
+    "remark-html": "15.0.1",
+    "remark-parse": "10.0.1",
+    "to-vfile": "7.2.3",
+    "unified": "10.1.2"
   },
   "devDependencies": {
     "@types/node": "18.8.4",
+    "@types/prismjs": "1.26.0",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
     "eslint": "8.25.0",
