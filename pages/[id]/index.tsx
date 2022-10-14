@@ -1,9 +1,6 @@
-import type { NextPage } from "next";
-
-import { useEffect } from "react";
 import { getPostData } from "../api/md";
 
-import { Container, Card, Row, Text } from "@nextui-org/react";
+import { Container, Text } from "@nextui-org/react";
 
 export async function getStaticPaths() {
   return {

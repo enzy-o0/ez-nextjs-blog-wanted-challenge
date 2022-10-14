@@ -1,26 +1,16 @@
 import type { NextPage } from "next";
 import { useRouter } from "next/router";
 
-import {
-  Navbar,
-  Text,
-  Card,
-  Grid,
-  Link,
-  Container,
-  Row,
-} from "@nextui-org/react";
-
+import { Navbar, Text, Card, Grid, Link } from "@nextui-org/react";
+import Image from "next/image";
 const Home: NextPage = () => {
-  const router = useRouter();
-
   return (
     <>
       <Grid.Container gap={3} justify="center">
         <Grid xs={3}>
           <Card css={{ p: "$6", mw: "400px" }}>
             <Card.Header>
-              <img
+              <Image
                 alt="nextui logo"
                 src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
                 width="34px"
@@ -41,7 +31,7 @@ const Home: NextPage = () => {
               <Text>NextUI의 Grid를 만나볼까요?</Text>
             </Card.Body>
             <Card.Footer>
-              <Link icon color="primary" href="/grid">
+              <Link color="primary" href="/grid">
                 Grid 보러가기
               </Link>
             </Card.Footer>
@@ -50,7 +40,7 @@ const Home: NextPage = () => {
         <Grid xs={3}>
           <Card css={{ p: "$6", mw: "400px" }}>
             <Card.Header>
-              <img
+              <Image
                 alt="nextui logo"
                 src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
                 width="34px"
@@ -71,12 +61,7 @@ const Home: NextPage = () => {
               <Text>NextUI의 Text를 만나볼까요?</Text>
             </Card.Body>
             <Card.Footer>
-              <Link
-                icon
-                color="primary"
-                target="_blank"
-                href="/text"
-              >
+              <Link color="primary" target="_blank" href="/text">
                 Text 보러가기
               </Link>
             </Card.Footer>
